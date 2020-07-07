@@ -1,0 +1,14 @@
+#!/bin/bash
+# ##################################################
+# NAME:
+#   qrclip
+# DESCRIPTION:
+#   Generates and displays a qrcode for a given 
+#   string found in clipboard.
+# AUTHOR:
+#   bytebutcher
+# ##################################################
+
+xclip -o | qrencode -o "-" $@ | display
+
+# END OF CODE
