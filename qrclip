@@ -9,6 +9,12 @@
 #   bytebutcher
 # ##################################################
 
+required_command="qrencode"
+command -v "${required_command}" >/dev/null 2>&1 || {
+	echo "Require ${required_command} but it's not installed. Aborting." >&2
+	exit 1;
+}
+
 xclip -o | qrencode -o "-" $@ | display
 
 # END OF CODE
