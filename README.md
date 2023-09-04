@@ -44,4 +44,4 @@ Feel free to fork the project and submit a pull request with your changes!
 
 ## License
 
-This project is licensed under the GPLv3 License - see the LICENSE.md file for details.
+This project is licensed under the GPLv3 License - see the LICENSE file for details.
